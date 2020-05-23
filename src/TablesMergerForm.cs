@@ -336,7 +336,12 @@ namespace RD_AAOW
 			e.Cancel = true;
 
 			// Отображение
-			ProgramDescription.ShowAbout ();
+			AboutForm af = new AboutForm (al, "https://github.com/adslbarxatov/TablesMerger",
+				"https://github.com/adslbarxatov/TablesMerger/releases",
+				"",
+
+				"This tool allows you to merge data tables of different types into single file (by columns adding)\r\n\r\n" +
+				"Этот инструмент позволяет объединять таблицы данных различных типов в единый файл (добавлением столбцов)");
 			}
 		}
 	}

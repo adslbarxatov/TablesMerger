@@ -1,6 +1,8 @@
-# TablesMerger v 1.3.1
+# TablesMerger v 1.4h
 
-A tool for data tables merging / Инструмент объединения таблиц данных
+A tool for data tables merging
+
+Инструмент объединения таблиц данных
 
 #
 
