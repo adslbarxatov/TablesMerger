@@ -35,6 +35,8 @@ you can get these results:
 
 (depends from selected settings)
 
+
+
 #
 
 Этот инструмент позволяет объединять таблицы данных различных типов в единый файл.
@@ -66,16 +68,26 @@ you can get these results:
 
 (зависит от выбранных настроек)
 
-#
 
-We've formalized our [Applications development policy (ADP)](https://vk.com/@rdaaow_fupl-adp).
-We're strongly recommend reading it before using our products.
 
-Мы формализовали нашу [Политику разработки приложений (ADP)](https://vk.com/@rdaaow_fupl-adp).
-Настоятельно рекомендуем ознакомиться с ней перед использованием наших продуктов.
-
-#
+## Requirements / Требования
 
 Needs Windows XP and newer, Framework 4.0 and newer. Interface languages: ru_ru, en_us
 
 Требуется ОС Windows XP и новее, Framework 4.0 и новее. Языки интерфейса: ru_ru, en_us
+
+
+
+## Development policy and EULA / Политика разработки и EULA
+
+This [Policy (ADP)](https://vk.com/@rdaaow_fupl-adp), its positions, conclusion, EULA and application methods
+describes general rules that we follow in all of our development processes, released applications and implemented
+ideas.
+**It must be acquainted by participants and users before using any of laboratory's products.
+By downloading them, you agree to this Policy**
+
+Данная [Политика (ADP)](https://vk.com/@rdaaow_fupl-adp), её положения, заключение, EULA и способы применения
+описывают общие правила, которым мы следуем во всех наших процессах разработки, вышедших в релиз приложениях
+и реализованных идеях.
+**Обязательна к ознакомлению всем участникам и пользователям перед использованием любого из продуктов лаборатории.
+Загружая их, вы соглашаетесь с этой Политикой**
