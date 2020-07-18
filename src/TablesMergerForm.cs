@@ -336,9 +336,7 @@ namespace RD_AAOW
 			e.Cancel = true;
 
 			// Отображение
-			AboutForm af = new AboutForm (al, "https://github.com/adslbarxatov/TablesMerger",
-				"https://github.com/adslbarxatov/TablesMerger/releases",
-				"",
+			AboutForm af = new AboutForm (al, "*", "*", "",
 
 				"This tool allows you to merge data tables of different types into single file (by columns adding)\r\n\r\n" +
 				"Этот инструмент позволяет объединять таблицы данных различных типов в единый файл (добавлением столбцов)");

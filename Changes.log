@@ -1,6 +1,11 @@
 ﻿Tables merger changes log
 
-Version 1.4h
+Version 1.4.1p:
+• Updated application info interface (more convenient font is used for now);
+• Added a button to access the Application development policy and EULA in the application info interface (due to ADP update);
+• Added automatic check for updates to the application info interface
+
+Version 1.4h:
 • New application info interface implemented
 
 Version 1.3.1:
