@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Threading;
 using System.Windows.Forms;
 
 namespace RD_AAOW
@@ -15,20 +14,16 @@ namespace RD_AAOW
 		[STAThread]
 		public static void Main (string[] args)
 			{
-			// Проверка запуска единственной копии
-			bool result;
-			Mutex instance = new Mutex (true, ProgramDescription.AssemblyTitle, out result);
-			if (!result)
-				{
-				MessageBox.Show (string.Format (Localization.GetText ("ProgramLaunchedError", SupportedLanguages.ru_ru),
-					ProgramDescription.AssemblyTitle), ProgramDescription.AssemblyTitle, MessageBoxButtons.OK,
-					MessageBoxIcon.Exclamation);
-				return;
-				}
-
-			// Запуск программы в случае уникальности
+			// Инициализация
 			Application.EnableVisualStyles ();
 			Application.SetCompatibleTextRenderingDefault (false);
+
+			// Отображение справки и запроса на принятие Политики
+			if (!ProgramDescription.AcceptEULA ())
+				return;
+			ProgramDescription.ShowAbout (true);
+
+			// Запуск
 			Application.Run (new TablesMergerForm ());
 			}
 		}

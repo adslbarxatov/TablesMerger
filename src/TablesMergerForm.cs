@@ -84,12 +84,12 @@ namespace RD_AAOW
 			}
 
 		// Добавление файлов в обработку
-		private void AddFiles_Click (object sender, System.EventArgs e)
+		private void AddFiles_Click (object sender, EventArgs e)
 			{
 			OFDialog.ShowDialog ();
 			}
 
-		private void OFDialog_FileOk (object sender, System.ComponentModel.CancelEventArgs e)
+		private void OFDialog_FileOk (object sender, CancelEventArgs e)
 			{
 			// Запрос параметров обработки файлов
 			UnknownFileParametersSelector ufps = new UnknownFileParametersSelector (2, al, true);
@@ -336,10 +336,7 @@ namespace RD_AAOW
 			e.Cancel = true;
 
 			// Отображение
-			AboutForm af = new AboutForm (al, "*", "*", "",
-
-				"This tool allows you to merge data tables of different types into single file (by columns adding)\r\n\r\n" +
-				"Этот инструмент позволяет объединять таблицы данных различных типов в единый файл (добавлением столбцов)");
+			ProgramDescription.ShowAbout (false);
 			}
 		}
 	}
