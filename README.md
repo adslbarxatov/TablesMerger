@@ -1,4 +1,4 @@
-# TablesMerger v 1.4.2p
+# TablesMerger v 1.4.3i
 
 A tool for data tables merging
 
