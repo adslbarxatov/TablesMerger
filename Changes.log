@@ -1,5 +1,8 @@
 ﻿Tables merger changes log
 
+Version 1.5:
+• Fixed bug that disallowed to use columns headers with spaces
+
 Version 1.4.3i:
 • Application info interface now able to get last release's changes log;
 • Found and fixed hidden bug that caused an error when starting the application from local network;
