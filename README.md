@@ -1,8 +1,11 @@
 # TablesMerger v 1.5
+>PCC: 0004DF0777D1C8E1
+
 
 A tool for data tables merging
 
 Инструмент объединения таблиц данных
+
 
 #
 
@@ -20,7 +23,7 @@ If you have these files:
 3 2 3 2
 ```
 
-you can get these results:
+you can get these results (without fixing missing data and with it):
 
 ```
   A B C D E
@@ -53,7 +56,7 @@ you can get these results:
 3 2 3 2
 ```
 
-можно получить следующие результаты:
+можно получить следующие результаты (без восстановления пропусков и с восстановлением пропусков):
 
 ```
   A B C D E
@@ -68,6 +71,8 @@ you can get these results:
 
 (зависит от выбранных настроек)
 
+&nbsp;
+
 
 
 ## Requirements / Требования
@@ -75,6 +80,8 @@ you can get these results:
 Needs Windows XP and newer, Framework 4.0 and newer. Interface languages: ru_ru, en_us
 
 Требуется ОС Windows XP и новее, Framework 4.0 и новее. Языки интерфейса: ru_ru, en_us
+
+&nbsp;
 
 
 
@@ -85,6 +92,8 @@ describes general rules that we follow in all of our development processes, rele
 ideas.
 **It must be acquainted by participants and users before using any of laboratory's products.
 By downloading them, you agree to this Policy**
+
+#
 
 Данная [Политика (ADP)](https://vk.com/@rdaaow_fupl-adp), её положения, заключение, EULA и способы применения
 описывают общие правила, которым мы следуем во всех наших процессах разработки, вышедших в релиз приложениях
