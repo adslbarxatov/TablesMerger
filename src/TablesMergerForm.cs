@@ -9,7 +9,7 @@ namespace RD_AAOW
 	/// <summary>
 	/// Класс описывает главную форму програмы
 	/// </summary>
-	public partial class TablesMergerForm:Form
+	public partial class TablesMergerForm: Form
 		{
 		// Переменные
 		private SupportedLanguages al = Localization.CurrentLanguage;
@@ -68,7 +68,7 @@ namespace RD_AAOW
 			OFDialog.Filter = Localization.GetText ("TablesMergerForm_SFDialog_F", al);
 			OFDialog.Title = Localization.GetControlText ("GeomagDataDrawerForm", "OFDialog", al);
 			SFDialog.Filter = string.Format (Localization.GetControlText ("GeomagDataDrawerForm", "SFDialog_F", al),
-				"Geomag data drawer");
+				"Geomag data drawer", ProgramDescription.AppDataExtension);
 			SFDialog.Title = Localization.GetControlText ("GeomagDataDrawerForm", "SFDialog", al);
 
 			while (MergeType.Items.Count < 2)
