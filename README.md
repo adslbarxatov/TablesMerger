@@ -1,5 +1,5 @@
-# TablesMerger v 1.5.3
->PCC: 0004F109C8F11FBD
+# TablesMerger v 1.5.4
+>PCC: 0004F2DEFE2A09B3
 
 
 A tool for data tables merging
