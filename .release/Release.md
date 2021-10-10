@@ -1,3 +1,3 @@
-_Changes for v 1.6.1_:
-- Updated link and text presenter for ADP;
+_Changes for v 1.6.2_:
+- Updated link for ADP;
 - Applied fixed icons
