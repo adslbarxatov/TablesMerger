@@ -9,7 +9,7 @@ namespace RD_AAOW
 	/// <summary>
 	/// Класс описывает главную форму програмы
 	/// </summary>
-	public partial class TablesMergerForm: Form
+	public partial class TablesMergerForm:Form
 		{
 		// Переменные
 		private SupportedLanguages al = Localization.CurrentLanguage;
@@ -164,7 +164,7 @@ namespace RD_AAOW
 			mergeType = MergeType.SelectedIndex;
 
 			// Запуск 
-			HardWorkExecutor hwe = new HardWorkExecutor (ExecuteMerge);
+			HardWorkExecutor hwe = new HardWorkExecutor (ExecuteMerge, null, " ", true, true);
 
 			// Завершено
 			AddFiles.Enabled = ClearFiles.Enabled = MergeType.Enabled = BeginProcessing.Enabled =
