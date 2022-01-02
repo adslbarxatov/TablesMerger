@@ -113,10 +113,14 @@ namespace RD_AAOW
 		/// </summary>
 		public const uint MinHeight = 660;
 
+#if !DataProcessingOnly
+
 		/// <summary>
 		/// Возвращает имя автоматически сохраняемого файла данных
 		/// </summary>
 		public const string BackupDataFileName = "Backup." + ProgramDescription.AppDataExtension;
+
+#endif
 
 		/// <summary>
 		/// Возвращает имя стандартного файла параметров предпросмотра диаграммы
@@ -294,9 +298,7 @@ namespace RD_AAOW
 				screenWidth = Screen.PrimaryScreen.Bounds.Width;
 				screenHeight = Screen.PrimaryScreen.Bounds.Height;
 				}
-			catch
-				{
-				}
+			catch { }
 
 			// Язык интерфейса
 			interfaceLanguage = Localization.CurrentLanguage;
@@ -405,11 +407,9 @@ namespace RD_AAOW
 			string res = "";
 			try
 				{
-				res = Registry.GetValue (ProgramDescription.AssemblySettingsKey, ValueName, "").ToString ();
+				res = Registry.GetValue (RDGenerics.AssemblySettingsKey, ValueName, "").ToString ();
 				}
-			catch
-				{
-				}
+			catch { }
 
 			return res;
 			}
@@ -419,11 +419,9 @@ namespace RD_AAOW
 			{
 			try
 				{
-				Registry.SetValue (ProgramDescription.AssemblySettingsKey, ValueName, Value);
+				Registry.SetValue (RDGenerics.AssemblySettingsKey, ValueName, Value);
 				}
-			catch
-				{
-				}
+			catch { }
 			}
 		}
 	}

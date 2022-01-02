@@ -65,10 +65,9 @@ namespace RD_AAOW
 			Localization.CurrentLanguage = al = (SupportedLanguages)LanguageCombo.SelectedIndex;
 
 			// Локализация
-			OFDialog.Filter = Localization.GetText ("TablesMergerForm_SFDialog_F", al);
+			OFDialog.Filter = Localization.GetText (this.Name + "_OFDialog_F", al);
 			OFDialog.Title = Localization.GetControlText ("GeomagDataDrawerForm", "OFDialog", al);
-			SFDialog.Filter = string.Format (Localization.GetControlText ("GeomagDataDrawerForm", "SFDialog_F", al),
-				"Geomag data drawer", ProgramDescription.AppDataExtension);
+			SFDialog.Filter = Localization.GetText (this.Name + "_SFDialog_F", al);
 			SFDialog.Title = Localization.GetControlText ("GeomagDataDrawerForm", "SFDialog", al);
 
 			while (MergeType.Items.Count < 2)
@@ -317,7 +316,7 @@ namespace RD_AAOW
 		private void SFDialog_FileOk (object sender, CancelEventArgs e)
 			{
 			DiagramData dd = new DiagramData (mergedTable, mergedColumnNames);
-			if (dd.SaveDataFile (SFDialog.FileName, (DataOutputTypes)SFDialog.FilterIndex, true) != 0)
+			if (dd.SaveDataFile (SFDialog.FileName, (DataOutputTypes)(SFDialog.FilterIndex + 1), true) != 0)
 				{
 				MessageBox.Show (Localization.GetText ("DataFileSaveError", al), ProgramDescription.AssemblyTitle,
 					MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
