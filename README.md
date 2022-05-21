@@ -1,5 +1,5 @@
-# TablesMerger v 1.7.37
->PCC: 0005FDD2180599B6
+# TablesMerger v 1.8
+>PCC: 00060E070AC77AD1
 
 
 A tool for data tables merging
@@ -52,7 +52,7 @@ you can get these results (without fixing missing data and with it):
 ## Requirements / Требования
 
 - Windows XP or newer / или новее;
-- [Microsoft .NET Framework 4.0](https://www.microsoft.com/en-us/download/details.aspx?id=17718).
+- [Microsoft .NET Framework 4.0](https://microsoft.com/en-us/download/details.aspx?id=17718).
 
 Interface languages / языки интерфейса: ru_ru, en_us.
 
