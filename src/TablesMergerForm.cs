@@ -9,7 +9,7 @@ namespace RD_AAOW
 	/// <summary>
 	/// Класс описывает главную форму програмы
 	/// </summary>
-	public partial class TablesMergerForm:Form
+	public partial class TablesMergerForm: Form
 		{
 		// Переменные
 		private SupportedLanguages al = Localization.CurrentLanguage;
