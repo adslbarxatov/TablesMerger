@@ -2,59 +2,19 @@
 >PCC: 00061BCD4EDD8836
 
 
-A tool for data tables merging
+A tool for data tables merging.
 
-Инструмент объединения таблиц данных
-
-
-#
-
-This tool allows you to merge data tables of different types into single file.
-If you have these files:
-
-Этот инструмент позволяет объединять таблицы данных различных типов в единый файл.
-Если имеются следующие файлы:
-
-```
-  A B
-1 1 1
-2 4 5
-3 6 7
-
-  C D E
-1 8 9 4
-3 2 3 2
-```
-
-you can get these results (without fixing missing data and with it):
-
-можно получить следующие результаты (без восстановления пропусков и с восстановлением пропусков):
-
-```
-  A B C D E
-1 1 1 8 9 4
-3 6 7 2 3 2
-
-  A B C D E
-1 1 1 8 9 4
-2 4 5 0 0 0
-3 6 7 2 3 2
-```
-
-(depends from selected settings)
-
-(зависит от выбранных настроек)
+:warning: ***Starting from version 2.0 this project is a part of the [GeomagDataDrawer](https://github.com/adslbarxatov/GeomagDataDrawer) app.
+This repository is no longer updated***
 
 &nbsp;
 
+Инструмент объединения таблиц данных.
 
+:warning: ***С версии 2.0 проект является частью приложения [GeomagDataDrawer](https://github.com/adslbarxatov/GeomagDataDrawer).
+Данный репозиторий более не обновляется***
 
-## Requirements / Требования
-
-- Windows 7 or newer / или новее;
-- [Microsoft .NET Framework 4.8](https://go.microsoft.com/fwlink/?linkid=2088631).
-
-Interface languages / языки интерфейса: ru_ru, en_us.
+#
 
 &nbsp;
 
